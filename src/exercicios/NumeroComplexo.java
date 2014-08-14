@@ -50,6 +50,11 @@ public class NumeroComplexo {
         this.i = this.r * nc.i + this.i * nc.r;
     }
 
+    @Override
+    public String toString() {
+        return (r == 0?(i == 0?r+"":i+"i"):r + "" + (i == 0?"":(i > 0? " + ":" - ") + Math.abs(i) + "i"));
+    }
+
     
 
 }
